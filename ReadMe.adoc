@@ -1,0 +1,45 @@
+:Author: thesfinox93
+:Email: riccardo.finotello@gmail.com
+:Date: 22/05/2024
+:Revision: v1.0.0
+:License: GNU General Public License v3.0
+
+= Climate Measurement Board (CMB)
+
+The project uses an Arduino Nano ESP32 board with a temperature/humidity sensor and a photoresistor to make some simple measurements of the surroundings.
+
+== Step 1: Installation
+
+The development kit used for this project is a **Arduino Nano ESP32**, and the documentation refers to that module.
+However, any ESP32 (or IoT) board should do the trick.
+
+In order to replicate the project, you will need to follow the circuit (sorry, no schematics for the moment) and install the files.
+
+....
+This is an IoT project: you need to provide the secrets for the connection!
+....
+
+== Step 2: Assemble the circuit
+
+Connect the temperature/humidity sensor (DHT22) to the pin D7, and the photoresistor to the pin A2.
+
+=== Folder structure
+
+....
+  cmb                     => Arduino sketch folder
+  ├── cmb.ino             => main Arduino file
+  ├── thingProperties.png => IoT definitions
+  └── ReadMe.adoc         => this file
+....
+
+=== License
+This project is released under a GNU General Public License v3.0.
+
+=== Bill of Material
+
+|===
+|Part name             | Quantity        
+|Arduino Nano ESP32    | 1 
+|Photoresistor         | 1
+|DHT22                 | 1
+|===
